@@ -1,0 +1,17 @@
+{
+  "name": "wagon-counter-openspec",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "devDependencies": {
+    "@fission-ai/openspec": "1.13.0"
+  },
+  "scripts": {
+    "openspec": "openspec",
+    "spec:validate": "openspec validate --all --strict --no-interactive",
+    "project:check": "python3 scripts/check_project.py",
+    "check": "npm run spec:validate && npm run project:check"
+  }
+}
